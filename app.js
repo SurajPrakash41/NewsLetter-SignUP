@@ -31,7 +31,7 @@ app.post("/",function(req,res){
 		}]
 	};
 	const jsonData= JSON.stringify(data);
-	const url="https://us20.api.mailchimp.com/3.0/lists/de8d15d08";
+	const url="https://us20.api.mailchimp.com/3.0/lists/de8d15d082";
 	const options={
 		method:"POST",
 		auth: "Suraj:046edd4b5b0a9ed28c2c3abb3e2a3c38-us20"
