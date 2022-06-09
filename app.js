@@ -3,7 +3,7 @@ const express=require("express");
 const bodyParser=require("body-parser");
 const request=require("request");
 const https=require("https");
-
+require('dotenv').config();
 
 const app=express();
 
@@ -38,8 +38,8 @@ app.post("/",function(req,res){
   //options
 	const options={
 		method:"POST",
-		auth: "Suraj:046edd4b5b0a9ed28c2c3abb3e2a3c38-us20"
-    //username:password i.e API
+		auth: "Suraj:"+process.env.API_KEY
+
 
 	}
   //send data to mailchimp
